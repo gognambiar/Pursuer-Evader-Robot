@@ -1,0 +1,23 @@
+<launch>
+	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab1)/world/playground.world" />
+        
+<param name="scale_linear" value="2" type="double"/>
+    <param name="scale_angular" value="2" type="double"/>
+
+        <node pkg="lab1" type="evader"
+          name="evader" />
+
+        <node pkg="lab1" type="CB"
+           args="/robot_0" name="CB1" />
+
+<node pkg="lab1" type="CB"
+          args="/robot_1" name="CB2" />
+
+        <node pkg="lab1" type="CL"
+          name="CL" />
+
+        
+
+
+</launch>

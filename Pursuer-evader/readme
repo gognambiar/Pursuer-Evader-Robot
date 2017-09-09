@@ -1,0 +1,3 @@
+Impementation of a pursuer-evader program where 1 bot moves at a constant velocity avoiding obstacles and the a second robot follows its path.
+
+Implemented using ROS interface in C++
